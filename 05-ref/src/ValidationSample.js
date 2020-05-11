@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import './ValidationSample.css';
 
 class ValidationSample extends Component {
+
   state = {
     password: '',
     clicked: false,
@@ -19,6 +20,7 @@ class ValidationSample extends Component {
       clicked: true,
       validated: this.state.password === '0000'
     });
+    this.input.focus();
   }
 
   render() {
@@ -28,10 +30,11 @@ class ValidationSample extends Component {
           type="password"
           value={this.state.password}
           onChange={this.handleChange}
-          className={this.state.clicked ? (this.state.validated ? 'success' : 'failure'): ''} 
+          className={this.state.clicked ? (this.state.validated ? 'success' : 'failure'): ''}
+          ref={(ref) => this.input = ref}
         />
         <button 
-          onClick={this.handleButtonClick}>╟каУго╠Б</button>
+          onClick={this.handleButtonClick}>Й╡─Л╕²М∙≤Й╦╟</button>
       </>
     );
   }

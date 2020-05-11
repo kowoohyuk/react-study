@@ -12,7 +12,7 @@ class RefSample extends Component {
       <div>
         <input ref={this.input} />
       </div>
-    )
+    );
   }
 }
 
