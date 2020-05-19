@@ -18,7 +18,6 @@ function reducer(state, action) {
 
 const Counter = () => {
   const [state, dispatch] = useReducer(reducer, { value: 0 }); // reducer 함수, 기본값(해당 reducer) | return [현재 상태, 액션을 발생시키는 함수]
-
   return (
     <>
       <p>
