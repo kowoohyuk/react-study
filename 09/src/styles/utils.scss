@@ -1,3 +1,5 @@
+@import '~include-media/dist/include-media'; // node_modules 내부 라이브러리의 scss 경로를 지정해야 한다. 
+@import '~open-color/open-color';
 // 변수 사용하기
 $red: #fa5252;
 $orange: #fd7e14;
