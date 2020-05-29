@@ -14,8 +14,10 @@ export default function usePromise(promiseCreator, deps) {
       } catch(e) {
         setError(e);
       }
+      setLoading(false);
     }
     process();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, deps);
 
   return [loading, resolved, error];
